@@ -1,0 +1,22 @@
+{{ define "title" }}
+
+<div class="primary">
+  {{ .Title }}
+</div>
+<div class="secondary">
+  {{ .Params.subtitle }}
+</div>
+
+{{ end }}
+
+{{ define "main" }}
+
+<div class="container">
+  email: <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+  <br>
+  discord: CoherentNonsense#3937
+  <br>
+  youtube: <a href="https://www.youtube.com/channel/UCc3jA5i2WqZJxsUt7ETLkSA">Coherent Nonsense</a>
+</div>
+
+{{ end }}

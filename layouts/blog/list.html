@@ -1,0 +1,28 @@
+{{ define "title" }}
+  <div class="primary">
+    {{ .Title }}
+  </div>
+{{ end }}
+
+{{ define "main" }}
+  <div class="container">
+    {{ $scratch := newScratch}}
+    {{ $scratch.Set "curYear" "0" }}
+    {{ range .Pages }}
+      {{ $year := .Params.Date.Format "2006" }}
+      {{ $curYear := $scratch.Get "curYear" }}
+      {{ if ne $curYear $year }}
+        {{ $scratch.Set "curYear" $year }}
+        <div class="blog-item">
+          <p class="new-year">
+            <span>00-00-</span>{{ $year }}
+          </p>
+        </div>
+      {{ end }}
+      <div class="blog-item">
+        <p class="date">{{ .Params.Date.Format "2006-01-02" }}</p>
+        <a href="{{ .RelPermalink }}" class="title">{{ .Params.Title }}</a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

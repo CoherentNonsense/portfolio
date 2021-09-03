@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<img id="header-image" src="/img/{{ .Params.img }}">
+
+<div class="container markdown">
+  <h1>{{ .Title }}</h1>
+  <div class="tools-container">
+    {{ range .Params.tools }}
+    <div>{{ . }}</div>
+    {{ end }}
+  </div>
+  <div class="action-buttons">
+    <a href="{{ .Params.source }}"><i class="fab fa-github"></i><div class="tooltip">Source</div></a>
+    <a target="_blank" rel="noopener noreferrer" href="{{ .Params.live }}"><i class="fas fa-window-maximize"></i><div class="tooltip">Live</div></a>
+  </div>
+  {{ .Content }}
+</div>
+
+{{ end }}

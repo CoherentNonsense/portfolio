@@ -1,0 +1,22 @@
+baseURL = "http://coherentnonsense.github.io"
+languageCode = "en-us"
+title = "Coherent Nonsense"
+publishDir = "docs"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = -4
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = -3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = -1
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 0

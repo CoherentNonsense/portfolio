@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <base href="{{ .Site.BaseURL }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/styles.css">
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  <title>{{ $title }}</title>
+  <script src="https://kit.fontawesome.com/f245a6d451.js" crossorigin="anonymous"></script>
+  <body>
+    <header class="container">
+      <a class="logo" href="/">
+        <img src="/img/logo.svg" alt="ct logo">
+      </a>
+      <div id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        {{ $url := .URL}}
+        {{ range .Site.Menus.main }}
+
+          {{ if or (eq $url (print .URL "/")) (eq $url (print .URL)) }}
+            <a class="current">{{ .Name }}</a>
+          {{ else }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+
+        {{ end }}
+      </nav>
+    </header>
+    <div id="title" class="container">
+      {{ block "title" . }}
+      {{ end }}
+    </div>
+    <div id="title-separator"></div>
+    <div id="content">
+      {{ block "main" . }}
+
+      {{ end }}
+    </div>
+    <footer class="container">
+      <ul class="links">
+        <li><a href="mailto: casey.tai@icloud.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/coherentnonsense"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p>&copy; 2021 jk do whatever -> <a href="https://github.com/coherentnonsense/portfolio">github</a></p>
+    </footer>
+
+    <script src="/js/app.js"></script>
+    {{ range .Params.css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
+
+    {{ range .Params.js -}}
+        <script type="module" src="{{ . | absURL }}"></script>
+    {{- end }}
+
+  </body>
+</html>

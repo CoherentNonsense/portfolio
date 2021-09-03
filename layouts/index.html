@@ -1,0 +1,28 @@
+{{ define "title" }}
+
+<div class="primary">
+  <span>I'm </span><span class="color">{{ .Params.name }}</span>
+</div>
+<div class="secondary">
+  <div id="slots">
+    {{ range .Params.slots }}
+
+    <p>{{ . }}</p>
+
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}
+
+{{ define "main" }}
+
+<div class="container markdown">
+
+  helo
+  
+  <canvas style="width: 100%;" id="canvas"></canvas>
+
+</div>
+
+{{ end }}

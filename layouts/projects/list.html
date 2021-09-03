@@ -1,0 +1,38 @@
+{{ define "title" }}
+  <div class="primary">
+    {{ .Title }}
+  </div>
+  <div class="secondary">You can see all of my projects on my <a href="https://github.com/coherentnonsense"><b>github</b></a></div>
+{{ end }}
+
+{{ define "main" }}
+
+<div id="list-container" class="container">
+  {{ range .Pages }}
+    <div class="list-item">
+      <a href="{{ .RelPermalink }}" class="thumbnail">
+        <img src="/img/thumbnails/{{ .Params.thumbnail }}" alt="thumbnail">
+      </a>
+      <div class="info">
+        <h1>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </h1>
+        <div class="tools-container">
+          {{ range .Params.tools }}
+          <div>{{ . }}</div>
+          {{ end }}
+        </div>
+        <p class="about">{{ .Params.about }}</p>
+        <div class="action-buttons">
+          <a href="{{ .Params.source }}"><i class="fab fa-github"></i><div class="tooltip">Source</div></a>
+          <a target="_blank" rel="noopener noreferrer" href="{{ .Params.live }}"><i class="fas fa-window-maximize"></i><div class="tooltip">Live</div></a>
+          <a href="{{ .RelPermalink }}"><i class="fas fa-info-circle"></i><div class="tooltip">About</div></a>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+{{ end }}
