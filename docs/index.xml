@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coherent Nonsense</title>
+    <link>https://coherentnonsense.github.io/portfolio/</link>
+    <description>Recent content on Coherent Nonsense</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://coherentnonsense.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trist</title>
+      <link>https://coherentnonsense.github.io/portfolio/projects/trist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coherentnonsense.github.io/portfolio/projects/trist/</guid>
+      <description>About Trist is an anonymous social network I used to recreate everytime I learn something new. In this final iteration of Trist, I had discovered the domain driven design architecture, and I went full DDD.
+How&amp;rsquo;d It Go? Domain driven design is a pretty nifty idea, but for a small single person project it was a lot of overkill. Creating a feature as simple as logging in had to go through multiple layers of the &amp;lsquo;onion architecture&amp;rsquo; just to return a token.</description>
+    </item>
+    
+    <item>
+      <title>Hyelo</title>
+      <link>https://coherentnonsense.github.io/portfolio/projects/hyelo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coherentnonsense.github.io/portfolio/projects/hyelo/</guid>
+      <description>About I had a phase where I tried making way too many social networks. Somewhere during that period, I wanted to make something very minimal with a couple features that I could implement quickly without the weight of a full social network. I thought an Omegle clone with the addition of private/public chat rooms was a cool idea and so I set myself a weekend to create it.
+Tech Stack At the time, I was waist deep in React, though I felt it was a little too much for such a small app (I may have been getting sick of it as well), so I chose to just keep it simple with pure javascript in the front end, and socket.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://coherentnonsense.github.io/portfolio/blog/hello-world/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://coherentnonsense.github.io/portfolio/blog/hello-world/</guid>
+      <description>First Paragraph Ayy, this is the start of my blog.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://coherentnonsense.github.io/portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coherentnonsense.github.io/portfolio/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grid Cannon</title>
+      <link>https://coherentnonsense.github.io/portfolio/projects/grid_cannon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coherentnonsense.github.io/portfolio/projects/grid_cannon/</guid>
+      <description>About Inspired by the solitaire game designed by Tom Francis. This is pretty much a filler project until I get more projects. T&amp;rsquo;was a school project that I enjoyed making.</description>
+    </item>
+    
+  </channel>
+</rss>

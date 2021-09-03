@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Coherent Nonsense</title>
+    <link>http://coherentnonsense.github.io/tags/blog/</link>
+    <description>Recent content in blog on Coherent Nonsense</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://coherentnonsense.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>http://coherentnonsense.github.io/blog/hello-world/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://coherentnonsense.github.io/blog/hello-world/</guid>
+      <description>My First Paragraph Ayy, this is the start of the blog. It already feels like I&amp;rsquo;m doing an assignment for school. RIP me. This post will mostly discuss the future of these blogs as well as some retrospection as to why I want to do this in the first place. Not really expecting anyone to read this part. I&amp;rsquo;m honestly using it as an example post so I can style the site properly.</description>
+    </item>
+    
+  </channel>
+</rss>

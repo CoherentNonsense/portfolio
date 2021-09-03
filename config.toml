@@ -1,7 +1,9 @@
-baseURL = "http://coherentnonsense.github.io"
+baseURL = "https://coherentnonsense.github.io/portfolio/"
 languageCode = "en-us"
 title = "Coherent Nonsense"
 publishDir = "docs"
+[params]
+  github = "https://github.com/coherentnonsense"
 
 [menu]
   [[menu.main]]

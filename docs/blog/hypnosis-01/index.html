@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <base href="http://coherentnonsense.github.io">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  
+  <title>Hypnosis: A Small Game Engine for My Blog | Coherent Nonsense</title>
+  <script src="https://kit.fontawesome.com/f245a6d451.js" crossorigin="anonymous"></script>
+  <body>
+    <header class="container">
+      <a class="logo" href="/">
+        <img src="/img/logo.svg" alt="ct logo">
+      </a>
+      <div id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        
+        
+
+          
+            <a href="/">About</a>
+          
+
+        
+
+          
+            <a href="/projects">Projects</a>
+          
+
+        
+
+          
+            <a href="/interactive_tutorials">Interactive Tutorials</a>
+          
+
+        
+
+          
+            <a href="/blog">Blog</a>
+          
+
+        
+
+          
+            <a href="/contact">Contact</a>
+          
+
+        
+      </nav>
+    </header>
+    <div id="title" class="container">
+      
+      
+    </div>
+    <div id="title-separator"></div>
+    <div id="content">
+      
+
+<div class="container markdown">
+  <h1>Hypnosis: A Small Game Engine for My Blog</h1>
+  <p>Posted on December 15, 2020</p>
+  <h2 id="a-game-engine-for-a-blog">A Game Engine for a Blog?</h2>
+<p>So to make my blog the special unicorn that it is, I want my content to have a fun and interactive side to it with tiny games and simulations that compliment my writing. These programs will be run using Javascript (The programming language used in browsers).</p>
+<p>I don&rsquo;t want to have to program everything from scratch everytime I want to make a small simulation. This is why I will be making a game engine which can do a bunch of things that all my programs will probably need like rendering sprites and getting user input.</p>
+<p>Now, since this will be a rather large project, it&rsquo;s going to need a rather cool name. And so I present to you: Hypnosis. I named it that because it&rsquo;s what came up when I googled &lsquo;cool word&rsquo;.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This is a list of things I need Hypnosis to do.</p>
+<ul>
+<li>Rendering 2D sprites and 3D meshes</li>
+<li>A 2D and 3D camera</li>
+<li>Getting keyboard and mouse input</li>
+<li>A simple 2D and 3D physics system</li>
+<li>UI</li>
+<li>Animations</li>
+<li>Lots more</li>
+</ul>
+<p>Now this is a lot of stuff. Like a <strong>lot</strong> of stuff. It would be stupid to try make all of this at once. So I have decided to make this framework very modular. This is the practice of developing code as small individual parts that can only do one thing. This will allow me to build the parts I need as I need them. For example, my first project will be rendering 3D objects using just math, so I can first work on the 3D rendering, 3D camera, and maybe a couple more things as I go along.</p>
+<h2 id="the-technology-used">The Technology Used</h2>
+<h3 id="rendering">Rendering</h3>
+<p>Rendering will be a big part of Hypnosis. There are two options when it comes to rendering on the web. Using the Javascript canvas and WebGl. The canvas uses your CPU while OpenGl uses your GPU. One of those acronyms has the word graphical. Surprisingly, it&rsquo;s muuuuch faster at doing graphics but at the cost of complexity. For the sake of speed, I will be using the canvas which is fast enough for my purposes. And even so, do to the nature of modular code, it will be easy to switch out a canvas renderer for a OpenGl renderer later on if I need more power.</p>
+<h3 id="everything-else-p">Everything Else :P</h3>
+<p>Javascript&hellip;</p>
+<p>Rendering was basically the only thing that could have been done without pure Javascript. Then we just chose the Javascript option so ye&hellip;</p>
+<h2 id="what-is-to-come">What is to Come?</h2>
+<p>I will share my entire process of creating Hypnosis. Each module will probably be an entire post so I will go in depth on each topic used. And as always, all my code is open source and can be found on my <a href="https://github.com/c-d-t/portfolio">Github</a></p>
+
+</div>
+
+
+    </div>
+    <footer class="container">
+      <ul class="links">
+        <li><a href="mailto: casey.tai@icloud.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/c-d-t"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p>&copy; 2021 jk do whatever -> <a href="https://github.com/coherentnonsense/portfolio">github</a></p>
+    </footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

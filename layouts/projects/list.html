@@ -2,7 +2,7 @@
   <div class="primary">
     {{ .Title }}
   </div>
-  <div class="secondary">You can see all of my projects on my <a href="https://github.com/coherentnonsense"><b>github</b></a></div>
+  <div class="secondary">You can see all of my projects on my <a href="{{ .Site.Params.Github }}"><b>github</b></a></div>
 {{ end }}
 
 {{ define "main" }}
@@ -11,7 +11,7 @@
   {{ range .Pages }}
     <div class="list-item">
       <a href="{{ .RelPermalink }}" class="thumbnail">
-        <img src="/img/thumbnails/{{ .Params.thumbnail }}" alt="thumbnail">
+        <img src="img/thumbnails/{{ .Params.thumbnail }}" alt="thumbnail">
       </a>
       <div class="info">
         <h1>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <base href="http://coherentnonsense.github.io">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  
+  <title>Hypnosis: Starting a Game Engine from Scratch | Coherent Nonsense</title>
+  <script src="https://kit.fontawesome.com/f245a6d451.js" crossorigin="anonymous"></script>
+  <body>
+    <header class="container">
+      <a class="logo" href="/">
+        <img src="/img/logo.svg" alt="ct logo">
+      </a>
+      <div id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        
+        
+
+          
+            <a href="/">About</a>
+          
+
+        
+
+          
+            <a href="/projects">Projects</a>
+          
+
+        
+
+          
+            <a href="/interactive_tutorials">Interactive Tutorials</a>
+          
+
+        
+
+          
+            <a href="/blog">Blog</a>
+          
+
+        
+
+          
+            <a href="/contact">Contact</a>
+          
+
+        
+      </nav>
+    </header>
+    <div id="title" class="container">
+      
+      
+    </div>
+    <div id="title-separator"></div>
+    <div id="content">
+      
+
+<div class="container markdown">
+  <h1>Hypnosis: Starting a Game Engine from Scratch</h1>
+  <p>Posted on February 1, 2021</p>
+  <h2 id="preface">Preface</h2>
+<p>These series of posts will assume basic programming knowledge. You can find a series I made on that <a href="/notfound">here</a>. (Not made yet)</p>
+<p>I want most of the examples to be language agnostic, but since I will be showing a full implementation, some parts will be specific to Javascript, which is what Hypnosis is written in.</p>
+<p>Hypnosis will be a game engine specifically built for games and simulations to be run on my blog. If you want to know more, you can read about it <a href="blog/hypnosis-01/">here</a>. Today, we will actually start building the game engine. We will not implement the renderer yet so when we are done today, we wont be able to see anything, but there will be a strong foundation to build off of.</p>
+<h2 id="design">Design</h2>
+<p>Every game in the world follows the same underlying logic. Every frame, something happens. This is called the &lsquo;Game Loop&rsquo;. Typically, three things happen every frame:</p>
+<ol>
+<li>Getting the user&rsquo;s input</li>
+<li>Updating the game logic</li>
+<li>Rendering the game</li>
+</ol>
+<p>It&rsquo;s an easy way to break up the complexities of a game engine into modular parts.</p>
+<p>An example of a simple game loop:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// This runs every frame
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span>( <span style="color:#66d9ef">true</span> )
+{
+    <span style="color:#75715e">// Gets user input e.g. Keys pushed or mouse movement
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">getInput</span>( );
+
+    <span style="color:#75715e">// Does game logic e.g. Rotate 3D object or move player
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">updateGame</span>( );
+
+    <span style="color:#75715e">// Draws the game to the screen
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">render</span>( );
+}
+</code></pre></div><p>We will build off this simple premise to create a powerful game loop that our games will run on.</p>
+<h2 id="main-function">Main Function</h2>
+<p>I normally create a main function in Javascript which is the entry point for my program.</p>
+<h4 id="mainjs">main.js</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Entry Point
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">main</span>( )
+{
+
+    <span style="color:#75715e">// This runs every frame
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span>( <span style="color:#66d9ef">true</span> )
+    {
+        <span style="color:#75715e">// Gets user input e.g. Keys pushed or mouse movemen
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">getInput</span>( );
+
+        <span style="color:#75715e">// Does game logic e.g. Rotate 3D object or move player
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">updateGame</span>( );
+
+        <span style="color:#75715e">// Draws the game to the screen
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">render</span>( );
+    }
+
+}
+
+<span style="color:#75715e">// Run program
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">main</span>( ); 
+</code></pre></div><p>We have not created getInput(), updateGame(), and render() yet.</p>
+
+</div>
+
+
+    </div>
+    <footer class="container">
+      <ul class="links">
+        <li><a href="mailto: casey.tai@icloud.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/c-d-t"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p>&copy; 2021 jk do whatever -> <a href="https://github.com/coherentnonsense/portfolio">github</a></p>
+    </footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

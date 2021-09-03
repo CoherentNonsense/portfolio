@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game on Coherent Nonsense</title>
+    <link>http://coherentnonsense.github.io/tags/game/</link>
+    <description>Recent content in game on Coherent Nonsense</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://coherentnonsense.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hypnosis: Starting a Game Engine from Scratch</title>
+      <link>http://coherentnonsense.github.io/blog/hypnosis-02/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://coherentnonsense.github.io/blog/hypnosis-02/</guid>
+      <description>Preface These series of posts will assume basic programming knowledge. You can find a series I made on that here. (Not made yet)
+I want most of the examples to be language agnostic, but since I will be showing a full implementation, some parts will be specific to Javascript, which is what Hypnosis is written in.
+Hypnosis will be a game engine specifically built for games and simulations to be run on my blog.</description>
+    </item>
+    
+    <item>
+      <title>Hypnosis: A Small Game Engine for My Blog</title>
+      <link>http://coherentnonsense.github.io/blog/hypnosis-01/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://coherentnonsense.github.io/blog/hypnosis-01/</guid>
+      <description>A Game Engine for a Blog? So to make my blog the special unicorn that it is, I want my content to have a fun and interactive side to it with tiny games and simulations that compliment my writing. These programs will be run using Javascript (The programming language used in browsers).
+I don&amp;rsquo;t want to have to program everything from scratch everytime I want to make a small simulation. This is why I will be making a game engine which can do a bunch of things that all my programs will probably need like rendering sprites and getting user input.</description>
+    </item>
+    
+  </channel>
+</rss>
