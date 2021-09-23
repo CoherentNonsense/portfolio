@@ -18,8 +18,39 @@
 {{ define "main" }}
 
 <div class="container markdown">
+  <!-- About Me -->
+  <div id="about-me">
+    {{ .Content }}
+  </div>
 
-  helo
+  <!-- Current Page -->
+  {{ range first 1 (where .Site.Pages "Section" "projects") }}
+    <h2 class="list-item-preheader">Current Project</h2>
+    <div class="list-item">
+      <a href="{{ .RelPermalink }}" class="thumbnail">
+        <img src="img/thumbnails/{{ .Params.thumbnail }}" alt="thumbnail">
+      </a>
+      <div class="info">
+        <h1>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </h1>
+        <div class="tools-container">
+          {{ range .Params.tools }}
+          <div>{{ . }}</div>
+          {{ end }}
+        </div>
+        <p class="about">{{ .Params.about }}</p>
+        <div class="action-buttons">
+          <a href="{{ .Params.source }}"><i class="fab fa-github"></i><div class="tooltip">Source</div></a>
+          <a target="_blank" rel="noopener noreferrer" href="{{ .Params.live }}"><i class="fas fa-window-maximize"></i><div class="tooltip">Live</div></a>
+          <a href="{{ .RelPermalink }}"><i class="fas fa-info-circle"></i><div class="tooltip">About</div></a>
+          <a href="{{ .Section }}"><i class="fas fa-plus"></i><div class="tooltip">More Projects</div></a>
+        </div>
+      </div>
+    </div>
+  {{ end }}
   
   <canvas style="width: 100%;" id="canvas"></canvas>
 

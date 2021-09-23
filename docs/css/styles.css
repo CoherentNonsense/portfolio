@@ -229,7 +229,16 @@ nav a.current::after {
   font-size: 1.2em;
   padding-left: 0.8em;
 }
-
+#about-me {
+  text-align: center;
+  border: 2px solid rgb(21, 233, 134);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.list-item-preheader {
+  margin-bottom: 0.5em;
+}
 .list-item {
   background-color: #fff;
   width: 100%;
@@ -295,6 +304,7 @@ nav a.current::after {
   font-weight: bold;
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
 }
 .action-buttons > a:nth-child(2) {
   background-image: linear-gradient(145deg, rgb(64, 241, 159), rgb(0, 197, 105));

@@ -2,7 +2,7 @@
 thumbnail: trist.gif
 title: Hyelo
 tools: [Javascript, Node]
-weight: -9
+weight: -1
 about: Omegle clone
 live: https://hyelo.herokuapp.com/
 source: https://github.com/coherentnonsense/hyelo

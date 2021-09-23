@@ -20,7 +20,7 @@
         <span></span>
       </div>
       <nav>
-        {{ $url := .URL}}
+        {{ $url := .RelPermalink}}
         {{ range .Site.Menus.main }}
 
           {{ if or (eq $url (print .URL "/")) (eq $url (print .URL)) }}
