@@ -6,7 +6,11 @@
     <description>Recent content on Coherent Nonsense</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://coherentnonsense.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://coherentnonsense.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Drifting Forest</title>
       <link>https://coherentnonsense.github.io/portfolio/projects/drifting-forest/</link>

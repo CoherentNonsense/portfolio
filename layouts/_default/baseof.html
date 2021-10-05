@@ -9,38 +9,40 @@
   <title>{{ $title }}</title>
   <script src="https://kit.fontawesome.com/f245a6d451.js" crossorigin="anonymous"></script>
   <body>
-    <header class="container">
-      <a class="logo" href="">
-        <img src="img/logo.svg" alt="ct logo">
-      </a>
-      <div id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav>
-        {{ $url := .RelPermalink}}
-        {{ range .Site.Menus.main }}
-
-          {{ if or (eq $url (print .URL "/")) (eq $url (print .URL)) }}
-            <a class="current">{{ .Name }}</a>
-          {{ else }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+    <div>
+      <header class="container">
+        <a class="logo" href="">
+          <img src="img/logo.svg" alt="ct logo">
+        </a>
+        <div id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          {{ $url := .RelPermalink}}
+          {{ range .Site.Menus.main }}
+  
+            {{ if or (eq $url (print .URL "/")) (eq $url (print .URL)) }}
+              <a class="current">{{ .Name }}</a>
+            {{ else }}
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+  
           {{ end }}
-
+        </nav>
+      </header>
+      <section id="title" class="container">
+        {{ block "title" . }}
         {{ end }}
-      </nav>
-    </header>
-    <div id="title" class="container">
-      {{ block "title" . }}
-      {{ end }}
-    </div>
-    <div id="title-separator"></div>
-    <div id="content">
-      {{ block "main" . }}
-
-      {{ end }}
+      </section>
+      <div id="title-separator"></div>
+      <div id="content">
+        {{ block "main" . }}
+  
+        {{ end }}
+      </div>
     </div>
     <footer class="container">
       <ul class="links">
