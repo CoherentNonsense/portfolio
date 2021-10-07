@@ -1,5 +1,5 @@
 ---
-thumbnail: trist.gif
+thumbnail: hyelo.gif
 title: Hyelo
 tools: [Javascript, Node]
 weight: -1
