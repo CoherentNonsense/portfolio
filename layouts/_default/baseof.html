@@ -3,7 +3,7 @@
   <base href="{{ .Site.BaseURL }}">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
@@ -50,7 +50,7 @@
       <p>&copy; 2021 jk do whatever -> <a href="{{ .Site.Params.Github }}/portfolio">github</a></p>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
     {{ range .Params.css -}}
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}
