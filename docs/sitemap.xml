@@ -1,30 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
-    <loc>https://coherentnonsense.github.io/portfolio/projects/drifting-forest/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/projects/trist/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/projects/hyelo/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/</loc>
-    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/blog/</loc>
-    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/blog/hello-world/</loc>
-    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/categories/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/contact/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/projects/grid_cannon/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/projects/</loc>
-  </url><url>
-    <loc>https://coherentnonsense.github.io/portfolio/tags/</loc>
+    <loc>https://coherentnonsense.com/projects/drifting-forest/</loc>
   </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/projects/trist/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/projects/hyelo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/</loc>
+    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/blog/</loc>
+    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/blog/hello-world/</loc>
+    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/projects/grid_cannon/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coherentnonsense.com/tags/</loc>
+  </url>
+  
 </urlset>
