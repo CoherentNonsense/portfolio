@@ -1,4 +1,4 @@
-baseURL = "https://coherentnonsense.com/"
+baseURL = "https://www.coherentnonsense.com/"
 languageCode = "en-us"
 title = "Coherent Nonsense"
 publishDir = "docs"
