@@ -26,9 +26,11 @@ li {
   list-style: none;
 }
 body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
   position: relative;
-  padding-bottom: 8em;
-  min-height: 95vh;
   z-index: -2;
 }
 h1 {
@@ -39,7 +41,7 @@ h1 {
   padding-left: 30%;
   padding-right: 30%;
   font-size: 1em;
-  transition: padding 100ms ease;
+  transition: all 100ms ease;
 }
 .color {
   font-family: 'Comfortaa';
@@ -74,6 +76,10 @@ header > .current-title {
   font-weight: bold;
   color: rgb(91, 214, 132);
   font-size: 1.2em;
+}
+header.shadow {
+  /* border-bottom: solid 5px rgb(0, 197, 105); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
 nav a {
@@ -362,8 +368,6 @@ nav a.current::after {
 footer {
   color: #fff;
   background-color: #000;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 20px 0;
   box-sizing: border-box;

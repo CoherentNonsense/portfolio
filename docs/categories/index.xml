@@ -5,6 +5,10 @@
     <link>https://coherentnonsense.github.io/portfolio/categories/</link>
     <description>Recent content in Categories on Coherent Nonsense</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://coherentnonsense.github.io/portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://coherentnonsense.github.io/portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
